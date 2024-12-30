@@ -1,6 +1,7 @@
 package com.abcshopapp.main;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.sql.Date;
 
 public class LocalDateDemo {
@@ -46,6 +47,9 @@ public class LocalDateDemo {
 		System.out.println("\nLength of month : "+today.lengthOfMonth());
 		
 		System.out.println("\nLength of year : "+today.lengthOfYear());
+		
+		LocalDate myDob = LocalDate.of(2001, 03, 13);
+		System.out.println("\nMy age : "+Period.between(myDob,LocalDate.now()).getYears());
 		
 	}
 
