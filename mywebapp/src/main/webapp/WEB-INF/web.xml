@@ -9,4 +9,8 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <filter>
+  	<filter-name>filter1</filter-name>
+  	<filter-class>com.abc.servlets.LoginFilter</filter-class>
+  </filter>
 </web-app>

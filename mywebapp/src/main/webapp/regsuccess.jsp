@@ -12,12 +12,13 @@
 	
 	<%
 	
-	String fname = request.getParameter("fname");
-	String lname = request.getParameter("lname");
+//  	String fname = request.getParameter("fname");
+// 	String lname = request.getParameter("lname");
+	String fullName = (String) request.getAttribute("myFullName");
 	
 	%>
 	
-	<h3>Thank you <%= fname+" "+lname %></h3>
+	<h3>Thank you <%= fullName %></h3>
 
 </body>
 </html>

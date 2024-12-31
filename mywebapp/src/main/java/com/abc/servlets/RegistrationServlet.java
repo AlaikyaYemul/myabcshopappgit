@@ -32,6 +32,9 @@ public class RegistrationServlet extends HttpServlet {
 		//set all the values from request
 		
 		//return whether profile is created or not
+		String fullName = fname+" "+lname;
+		
+		request.setAttribute("myFullName", fullName);
 		
 		// for displaying purpose dispatch the request to jsp
 		RequestDispatcher rd = request.getRequestDispatcher("regsuccess.jsp");
